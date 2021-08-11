@@ -1,0 +1,21 @@
+{{ $config := .Site.Data.config }}
+
+<section id="contact" class="bg-light d-flex align-items-center" style="height: 100vh;">
+  <div class="container">
+      <h2 class="heading mb-3"> আলাপনের ডাকবাকসো</h2>
+
+      <div class="text-success my-3">
+        {{ $config.message }}
+      </div>
+
+      <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScFxm39s8tOD2bAjaK7SQ6rBtipO6IwUtiABO2tmCa8-FGygQ/formResponse" method="post" target="hidden_iframe"
+   onsubmit="submitted=true;">
+        <script type="text/javascript">var=false;</script>
+          <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if() {window.location='https://cheraalapon.github.io';}"></iframe>
+        <div class="form-group">
+          <textarea type="text" placeholder="চিঠি লিখুন; নামে কিংবা বেনামে" name="entry.1430813449" class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+  </div>
+</section>
